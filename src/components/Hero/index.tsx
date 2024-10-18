@@ -11,7 +11,7 @@ export default function Hero() {
     alert("Click Apple!");
   };
   return (
-    <section className="bg-slate-50 py-16 text-center">
+    <section className="bg-white py-16 text-center">
       <h1 className="text-4xl font-bold mb-2">병원 가기 전</h1>
       <h1 className="text-4xl font-bold mb-8">아프지마로 가격을 비교하세요</h1>
       <p className="text-lg mb-4">
