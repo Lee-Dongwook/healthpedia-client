@@ -13,7 +13,9 @@ interface NavLinkProps extends LinkProps {
 export default function NavLink({ href, children, className }: NavLinkProps) {
   return (
     <Link href={href} legacyBehavior>
-      <a className={cn("text-gray-600", className)}>{children}</a>
+      <a className={cn("text-gray-600 hover:text-blue-500", className)}>
+        {children}
+      </a>
     </Link>
   );
 }
