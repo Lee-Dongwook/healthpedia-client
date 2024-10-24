@@ -22,7 +22,7 @@ export default function Hero() {
       <p className="text-lg mb-16">
         지금 가격 비교하고 아프지마로 합리적인 병원을 선택해보세요.
       </p>
-      <div className="flex justify-center space-x-16">
+      <div className="flex justify-center space-x-16c">
         <HeroButton label="Google Play" onClick={handleClickGoogleButton} />
         <HeroButton label="App Store" onClick={handleClickAppleButton} />
       </div>
