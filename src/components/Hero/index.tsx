@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import HeroImage from "@/assets/img/Hero-logo.png";
-import HeroButton from "@/common/HeroButton";
+import HeroButton from "@/ui/HeroButton";
 
 export default function Hero() {
   const handleClickGoogleButton = () => {

@@ -2,9 +2,9 @@
 
 import React from "react";
 import HeaderLogo from "@/assets/img/header-logo.png";
-import HeaderImage from "@/common/HeaderImage";
-import HeaderLayout from "@/common/HeaderLayout";
-import HeaderLink from "@/common/HeaderLink";
+import HeaderImage from "@/ui/HeaderImage";
+import HeaderLayout from "@/layout/HeaderLayout";
+import HeaderLink from "@/ui/HeaderLink";
 
 export default function Header() {
   return (
