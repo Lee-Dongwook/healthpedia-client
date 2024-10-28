@@ -10,7 +10,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
   size,
-  variant,
+  variant = 'primary',
   disabled = false,
   children,
   onClick,

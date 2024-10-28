@@ -17,7 +17,7 @@ const Avatar: React.FC<AvatarProps> = ({
   width,
   height,
 }) => {
-  const size = 'w-8 h-8';
+  const size = 'w-14 h-14';
 
   const baseClasses = `${size} rounded-full overflow-hidden inline-block align-middle`;
   const statusClasses = `absolute bottom-0 right-0 w-3 h-3 rounded-full border-2 border-white`;

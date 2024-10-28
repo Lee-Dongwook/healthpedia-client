@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import AvatarGroup from './AvatarGroup';
+import AuthorAvatarImage from '@/assets/img/author-avatar.png';
 
 const meta: Meta<typeof AvatarGroup> = {
   title: 'Components/atoms/AvatarGroup',
@@ -17,35 +18,35 @@ export const Default: Story = {
   args: {
     avatars: [
       {
-        imageUrl: 'https://via.placeholder.com/150',
+        imageUrl: AuthorAvatarImage as unknown as string,
         initials: 'AB',
         status: 'active',
         width: 10,
         height: 10,
       },
       {
-        imageUrl: 'https://via.placeholder.com/150',
+        imageUrl: AuthorAvatarImage as unknown as string,
         initials: 'CD',
         status: 'idle',
         width: 10,
         height: 10,
       },
       {
-        imageUrl: 'https://via.placeholder.com/150',
+        imageUrl: AuthorAvatarImage as unknown as string,
         initials: 'EF',
         status: 'idle',
         width: 10,
         height: 10,
       },
       {
-        imageUrl: 'https://via.placeholder.com/150',
+        imageUrl: AuthorAvatarImage as unknown as string,
         initials: 'GH',
         status: 'active',
         width: 10,
         height: 10,
       },
       {
-        imageUrl: 'https://via.placeholder.com/150',
+        imageUrl: AuthorAvatarImage as unknown as string,
         initials: 'IJ',
         status: 'active',
         width: 10,

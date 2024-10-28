@@ -32,7 +32,7 @@ const TextArea: React.FC<TextareaProps> = ({
       )}
       <div className="relative">
         <textarea
-          className=""
+          className="border"
           id={id}
           placeholder={placeholder}
           value={value}

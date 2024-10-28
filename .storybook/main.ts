@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/nextjs';
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -29,10 +30,33 @@ const config: StorybookConfig = {
 
     imageRule.exclude = /\.svg$/;
 
-    config.module?.rules?.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    });
+    config.module?.rules?.push(
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  require('tailwindcss')(
+                    path.resolve(__dirname, '../tailwind.config.ts')
+                  ),
+                  require('autoprefixer'),
+                ],
+              },
+            },
+          },
+        ],
+        include: path.resolve(__dirname, '../'),
+      }
+    );
 
     return config;
   },
