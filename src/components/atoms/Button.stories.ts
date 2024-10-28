@@ -5,6 +5,9 @@ const meta: Meta<typeof Button> = {
   title: 'Components/atoms/Button',
   component: Button,
   tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
 };
 
 export default meta;

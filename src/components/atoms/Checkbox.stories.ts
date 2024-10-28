@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Avatar from './Avatar';
+import Checkbox from './Checkbox';
 
-const meta: Meta<typeof Avatar> = {
-  title: 'Components/atoms/Avatar',
-  component: Avatar,
+const meta: Meta<typeof Checkbox> = {
+  title: 'Components/atoms/Checkbox',
+  component: Checkbox,
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
@@ -11,6 +11,6 @@ const meta: Meta<typeof Avatar> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Avatar>;
+type Story = StoryObj<typeof Checkbox>;
 
 export const Default: Story = {};

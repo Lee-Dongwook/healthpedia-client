@@ -5,6 +5,9 @@ const meta: Meta<typeof AvatarGroup> = {
   title: 'Components/atoms/AvatarGroup',
   component: AvatarGroup,
   tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
 };
 
 export default meta;

@@ -5,6 +5,9 @@ const meta: Meta<typeof TextArea> = {
   title: 'Components/atoms/TextArea',
   component: TextArea,
   tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
 };
 
 export default meta;

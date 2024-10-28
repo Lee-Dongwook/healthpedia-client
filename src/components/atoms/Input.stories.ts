@@ -5,6 +5,9 @@ const meta: Meta<typeof Input> = {
   title: 'Components/atoms/Input',
   component: Input,
   tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
 };
 
 export default meta;
