@@ -10,6 +10,7 @@
     "format": "prettier --write .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes",
     "prepare": "husky"
   },
   "dependencies": {
