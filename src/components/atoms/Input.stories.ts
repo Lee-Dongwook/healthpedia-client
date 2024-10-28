@@ -3,6 +3,8 @@ import Input from './Input';
 
 const meta: Meta<typeof Input> = {
   title: 'Components/atoms/Input',
+  component: Input,
+  tags: ['autodocs'],
 };
 
 export default meta;
