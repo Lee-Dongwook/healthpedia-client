@@ -72,6 +72,38 @@ const config: Config = {
           100: "hsl(210, 100%, 99%)",
         },
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        mulish: ["Mulish", "sans-serif"],
+      },
+      fontWeight: {
+        extralight: "200",
+        regular: "400",
+        semibold: "600",
+        bold: "700",
+      },
+      fontSize: {
+        "display-1": ["48px", { fontWeight: "200", lineHeight: "1.3" }],
+        "display-2": ["40px", { fontWeight: "200", lineHeight: "1.3" }],
+
+        "heading-1": ["44px", { fontWeight: "700", lineHeight: "1.3" }],
+        "heading-2": ["36px", { fontWeight: "700", lineHeight: "1.3" }],
+        "heading-3": ["28px", { fontWeight: "700", lineHeight: "1.3" }],
+        "heading-4": ["24px", { fontWeight: "700", lineHeight: "1.3" }],
+        "heading-5": ["20px", { fontWeight: "700", lineHeight: "1.3" }],
+        "heading-6": ["16px", { fontWeight: "700", lineHeight: "1.3" }],
+
+        "lead-paragraph": ["22px", { fontWeight: "400", lineHeight: "1.5" }],
+
+        "body-lg-r": ["20px", { fontWeight: "400", lineHeight: "1.7" }],
+        "body-lg-s": ["20px", { fontWeight: "600", lineHeight: "1.7" }],
+        "body-md-r": ["18px", { fontWeight: "400", lineHeight: "1.7" }],
+        "body-md-s": ["18px", { fontWeight: "600", lineHeight: "1.7" }],
+        "body-base-r": ["16px", { fontWeight: "400", lineHeight: "1.7" }],
+        "body-base-s": ["16px", { fontWeight: "600", lineHeight: "1.7" }],
+        "body-sm-r": ["14px", { fontWeight: "400", lineHeight: "1.7" }],
+        "body-sm-s": ["14px", { fontWeight: "600", lineHeight: "1.7" }],
+      },
     },
   },
   plugins: [],
