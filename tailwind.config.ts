@@ -3,6 +3,7 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    // 반응형 디자인 적용
     screens: {
       xl: "1440px", // Desktop HD
       lg: "1024px", // Desktop
@@ -10,6 +11,15 @@ const config: Config = {
       sm: "320px", // Mobile
     },
     extend: {
+      //반응형 디자인 적용
+      screens: {
+        sm: "100%", // Mobile - full width
+        md: "100%", // Tablet - full width
+        lg: "1024px", // Desktop - fixed width
+        xl: "1440px", // Desktop HD - fixed width
+      },
+
+      // Grid 설정 적용
       container: {
         center: true,
         padding: {
@@ -18,12 +28,6 @@ const config: Config = {
           md: "3rem", // Tablet
           lg: "4rem", // Desktop
           xl: "5rem", // Desktop HD
-        },
-        screens: {
-          sm: "100%", // Mobile - full width
-          md: "100%", // Tablet - full width
-          lg: "1024px", // Desktop - fixed width
-          xl: "1440px", // Desktop HD - fixed width
         },
       },
       spacing: {
@@ -38,10 +42,11 @@ const config: Config = {
         "30": "120px",
       },
       colors: {
-        primary: "#3377FF", // Main Color
-        "primary-darker": "#2659BF", // Darker
-        "primary-lighter": "#99BBFF", // Lighter
-        "primary-subtle": "#E3EDFF", // Subtle
+        // Main Colors
+        primary: "#3377FF",
+        "primary-darker": "#2659BF",
+        "primary-lighter": "#99BBFF",
+        "primary-subtle": "#E3EDFF",
 
         // State Colors
         error: "#FF3B3B",
@@ -75,6 +80,12 @@ const config: Config = {
         "light-2": "#EBEBF0",
         "light-3": "#F2F2F5",
         "light-4": "#FAFAFC",
+
+        // Button Colors
+        "on-primary": "#FFFFFF",
+        "default-text": "#3A3A3C",
+        "default-bg": "#F2F2F5",
+        "transparent-bg": "transparent",
 
         background: "var(--background)",
         foreground: "var(--foreground)",
