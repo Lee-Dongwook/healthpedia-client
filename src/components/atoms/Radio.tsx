@@ -30,7 +30,7 @@ const Radio: React.FC<RadioProps> = ({
         className="form-radio text-blue-600 h-5 w-5"
         disabled={disabled}
       />
-      {label && <span className="text-gray-700">{label}</span>}
+      {label && <span className="ml-1 text-gray-700">{label}</span>}
     </label>
   );
 };

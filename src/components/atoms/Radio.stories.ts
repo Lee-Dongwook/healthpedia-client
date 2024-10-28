@@ -13,4 +13,16 @@ const meta: Meta<typeof Radio> = {
 export default meta;
 type Story = StoryObj<typeof Radio>;
 
-export const Default: Story = {};
+export const Active: Story = {};
+
+export const Labeled: Story = {
+  args: {
+    label: 'Type something',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    disabled: true,
+  },
+};
