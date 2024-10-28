@@ -34,28 +34,28 @@ const config: StorybookConfig = {
       {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: [
-                  require('tailwindcss')(
-                    path.resolve(__dirname, '../tailwind.config.ts')
-                  ),
-                  require('autoprefixer'),
-                ],
-              },
-            },
-          },
-        ],
-        include: path.resolve(__dirname, '../'),
       }
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     'style-loader',
+      //     'css-loader',
+      //     {
+      //       loader: 'postcss-loader',
+      //       options: {
+      //         postcssOptions: {
+      //           plugins: [
+      //             require('tailwindcss')(
+      //               path.resolve(__dirname, '../tailwind.config.ts')
+      //             ),
+      //             require('autoprefixer'),
+      //           ],
+      //         },
+      //       },
+      //     },
+      //   ],
+      //   include: path.resolve(__dirname, '../'),
+      // }
     );
 
     return config;
