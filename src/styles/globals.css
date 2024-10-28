@@ -24,4 +24,28 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  /* Desktop HD*/
+  .grid-12-cols-xl {
+    display: grid;
+    grid-template-columns: repeat(12, 65px);
+    column-gap: 30px;
+  }
+  /* Desktop */
+  .grid-12-cols-lg {
+    display: grid;
+    grid-template-columns: repeat(12, 50px);
+    column-gap: 30px;
+  }
+  /* Tablet */
+  .grid-6-cols {
+    display: grid;
+    grid-template-columns: repeat(6, 88px);
+    column-gap: 30px;
+  }
+  /* Mobile */
+  .grid-2-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    column-gap: 30px;
+  }
 }

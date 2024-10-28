@@ -3,7 +3,40 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    screens: {
+      xl: "1440px", // Desktop HD
+      lg: "1024px", // Desktop
+      md: "768px", // Tablet
+      sm: "320px", // Mobile
+    },
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem", // Mobile
+          md: "3rem", // Tablet
+          lg: "4rem", // Desktop
+          xl: "5rem", // Desktop HD
+        },
+        screens: {
+          sm: "100%", // Mobile - full width
+          md: "100%", // Tablet - full width
+          lg: "1024px", // Desktop - fixed width
+          xl: "1440px", // Desktop HD - fixed width
+        },
+      },
+      spacing: {
+        "2": "8px",
+        "4": "16px",
+        "6": "24px",
+        "8": "32px",
+        "10": "40px",
+        "16": "64px",
+        "20": "80px",
+        "24": "96px",
+        "30": "120px",
+      },
       colors: {
         primary: "#3377FF", // Main Color
         "primary-darker": "#2659BF", // Darker
