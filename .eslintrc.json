@@ -4,7 +4,7 @@
     "next/typescript",
     "plugin:storybook/recommended"
   ],
-  "plugins": ["react", "react-hooks", "prettier"],
+  "plugins": ["react", "prettier"],
   "rules": {
     "prettier/prettier": ["error"],
     "react/react-in-jsx-scope": "off",

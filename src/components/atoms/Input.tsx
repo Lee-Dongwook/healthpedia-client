@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface InputProps {
   id?: string;
@@ -17,7 +17,7 @@ const Input: React.FC<InputProps> = ({
   id,
   label,
   type,
-  placeholder = "Type something",
+  placeholder = 'Type something',
   value,
   onChange,
   icon,
@@ -50,7 +50,7 @@ const Input: React.FC<InputProps> = ({
       </div>
       {assistiveText && (
         <p
-          className={`mt-2 text-sm ${error ? "text-red-600" : "text-gray-600"}`}
+          className={`mt-2 text-sm ${error ? 'text-red-600' : 'text-gray-600'}`}
         >
           {assistiveText}
         </p>

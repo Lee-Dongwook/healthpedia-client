@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface TextareaProps {
   id?: string;
@@ -43,7 +43,7 @@ const TextArea: React.FC<TextareaProps> = ({
       </div>
       {assistiveText && (
         <p
-          className={`mt-2 text-sm ${error ? "text-red-600" : "text-gray-600"}`}
+          className={`mt-2 text-sm ${error ? 'text-red-600' : 'text-gray-600'}`}
         >
           {assistiveText}
         </p>

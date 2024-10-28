@@ -1,8 +1,8 @@
-import { Meta, StoryObj } from "@storybook/react";
-import TextArea from "./TextArea";
+import { Meta, StoryObj } from '@storybook/react';
+import TextArea from './TextArea';
 
 const meta: Meta<typeof TextArea> = {
-  title: "Components/atoms/TextArea",
+  title: 'Components/atoms/TextArea',
 };
 
 export default meta;
