@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import CheckIcon from '@/assets/icon/essentials/Check.svg';
+import EllipseIcon from '@/assets/icon/etc/Ellipse.svg';
 
 interface ToggleProps {
   checked?: boolean;
@@ -38,12 +39,16 @@ const Toggle: React.FC<ToggleProps> = ({
           className="sr-only"
         />
         <div
-          className={`block h-8 w-14 rounded-full ${isChecked ? ' bg-blue-500' : 'bg-[#E5E7EB]'}`}
+          className={`block h-6 w-16 rounded-full ${isChecked ? ' bg-blue-500' : 'bg-white border border-primary'}`}
         >
-          {isChecked ? <CheckIcon className="w-4 h-4 text-white m-auto" /> : ''}
+          {isChecked ? (
+            <CheckIcon className="w-5 h-5 text-white ml-1 mt-0.25" />
+          ) : (
+            <EllipseIcon className="w-5 h-5 mr-1 mt-0.25" />
+          )}
         </div>
         <div
-          className={`dot absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition transform ${isChecked ? 'translate-x-6 bg-[#E5E7EB]' : ''}`}
+          className={`dot absolute left-1 top-0.5 h-5 w-5 rounded-full transition transform ${isChecked ? 'translate-x-9 bg-white' : 'bg-primary'}`}
         ></div>
       </div>
     </label>

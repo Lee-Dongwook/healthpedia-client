@@ -13,4 +13,30 @@ const meta: Meta<typeof Toggle> = {
 export default meta;
 type Story = StoryObj<typeof Toggle>;
 
-export const Default: Story = {};
+export const ActiveOff: Story = {
+  args: {
+    checked: false,
+    disabled: false,
+  },
+};
+
+export const ActiveOn: Story = {
+  args: {
+    checked: true,
+    disabled: false,
+  },
+};
+
+export const DisabledOff: Story = {
+  args: {
+    checked: false,
+    disabled: true,
+  },
+};
+
+export const DisabledOn: Story = {
+  args: {
+    checked: true,
+    disabled: true,
+  },
+};
