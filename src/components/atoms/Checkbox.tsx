@@ -1,6 +1,7 @@
 'use client';
 import React, { useRef, useEffect } from 'react';
 import CheckIcon from '@/assets/icon/essentials/Check.svg';
+import IndeterminateIcon from '@/assets/icon/essentials/Indeterminate.svg';
 
 interface CheckboxProps {
   checked?: boolean;
@@ -29,7 +30,11 @@ const Checkbox: React.FC<CheckboxProps> = ({
     <label
       className={`flex items-center space-x-2 ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
     >
-      <div className="relative w-6 h-6 border border-gray-300 rounded">
+      <div
+        className={`relative w-7 h-7 border border-gray-300 rounded ${checked || indeterminate ? 'bg-blue-500' : 'bg-gray-400'}`}
+      >
+        {checked && <CheckIcon className="text-white ml-0.5" />}
+        {indeterminate && <IndeterminateIcon className="text-white ml-0.5" />}
         <input
           type="checkbox"
           ref={checkboxRef}
@@ -38,14 +43,9 @@ const Checkbox: React.FC<CheckboxProps> = ({
           className="opacity-0 absolute inset-0"
           disabled={disabled}
         />
-        {checked && <CheckIcon className="text-white fill-current" />}
       </div>
 
-      {label && (
-        <span className={` ${disabled ? 'text-gray-500' : 'text-gray-700'}`}>
-          {label}
-        </span>
-      )}
+      {label && <span className="text-dark-3">{label}</span>}
     </label>
   );
 };
