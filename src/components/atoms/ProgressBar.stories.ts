@@ -13,4 +13,16 @@ const meta: Meta<typeof ProgressBar> = {
 export default meta;
 type Story = StoryObj<typeof ProgressBar>;
 
-export const Default: Story = {};
+export const Success: Story = {
+  args: {
+    variant: 'success',
+    progress: 70,
+  },
+};
+
+export const Error: Story = {
+  args: {
+    variant: 'error',
+    progress: 55,
+  },
+};
