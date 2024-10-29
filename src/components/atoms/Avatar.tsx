@@ -4,6 +4,7 @@ import Image from 'next/image';
 export interface AvatarProps {
   key?: number;
   imageUrl?: string;
+  icon?: React.ReactNode;
   initials?: string;
   status?: 'active' | 'idle';
   width?: number;
@@ -12,6 +13,7 @@ export interface AvatarProps {
 
 const Avatar: React.FC<AvatarProps> = ({
   imageUrl,
+  icon,
   initials,
   status,
   width,
@@ -31,11 +33,22 @@ const Avatar: React.FC<AvatarProps> = ({
           width={width}
           height={height}
         />
+      ) : icon ? (
+        <div
+          className={`${baseClasses} bg-[#E3EDFF] flex items-center justify-center`}
+        >
+          {icon}
+        </div>
       ) : (
         <div
-          className={`${baseClasses} bg-gray-300 flex items-center justify-center text-white`}
+          className={`${baseClasses} bg-[#E3EDFF] flex items-center justify-center text-primary`}
         >
-          {initials}
+          {initials && (
+            <>
+              <span className="text-lg">{initials[0]}</span>
+              <span className="text-sm mt-0.5">{initials[1]}</span>
+            </>
+          )}
         </div>
       )}
       {status && (
