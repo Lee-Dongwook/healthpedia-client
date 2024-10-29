@@ -44,7 +44,7 @@ const Toggle: React.FC<ToggleProps> = ({
           {isChecked ? (
             <CheckIcon className="w-5 h-5 text-white ml-1 mt-0.25" />
           ) : (
-            <EllipseIcon className="w-5 h-5 mr-1 mt-0.25" />
+            <EllipseIcon className="w-16 h-20 ml-11 mt-1.5" />
           )}
         </div>
         <div
