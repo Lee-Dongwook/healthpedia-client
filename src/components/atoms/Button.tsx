@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ButtonProps {
-  size: 'small' | 'medium' | 'large';
+  size: 'small' | 'medium' | 'large' | 'g-small' | 'g-medium' | 'g-large';
   variant: 'primary' | 'secondary' | 'ghost';
   disabled?: boolean;
   children: React.ReactNode;
@@ -18,9 +18,12 @@ const Button: React.FC<ButtonProps> = ({
   const baseClasses =
     'font-medium rounded focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all ease-in-out duration-200';
   const sizeClasses = {
-    small: 'text-xs px-6 py-3',
-    medium: 'text-sm px-8 py-3.5',
-    large: 'text-base px-12 py-4',
+    'g-small': 'w-[45px] h-[45px]',
+    'g-medium': 'w-[52px] h-[52px]',
+    'g-large': 'w-[59px] h-[59px]',
+    small: 'w-[86px] h-[45px] text-xs px-6 py-3',
+    medium: 'w-[125px] h-[52px] text-sm px-8 py-3.5',
+    large: 'w-[145px] h-[59px] text-base px-12 py-4',
   };
 
   const variantClasses = {

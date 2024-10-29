@@ -13,4 +13,50 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {};
+export const Primary: Story = {
+  args: {
+    size: 'medium',
+    variant: 'primary',
+    children: 'Default',
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    size: 'medium',
+    variant: 'secondary',
+    children: 'Default',
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    size: 'g-medium',
+    variant: 'ghost',
+  },
+};
+
+export const Small: Story = {
+  args: {
+    size: 'small',
+    variant: 'primary',
+    children: 'Default',
+  },
+};
+
+export const Large: Story = {
+  args: {
+    size: 'large',
+    variant: 'primary',
+    children: 'Default',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    size: 'medium',
+    variant: 'primary',
+    children: 'Default',
+    disabled: true,
+  },
+};
