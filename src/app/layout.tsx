@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import '@/styles/globals.css';
 import Header from '@/components/organisms/Header';
 import Footer from '@/components/organisms/Footer';
+import { TanstackQueryProvider } from '@/services/TanstackQueryProvider';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -30,9 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <TanstackQueryProvider>
+          <Header />
+          {children}
+          <Footer />
+        </TanstackQueryProvider>
       </body>
     </html>
   );
