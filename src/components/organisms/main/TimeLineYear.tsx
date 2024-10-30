@@ -1,5 +1,5 @@
 import React from 'react';
-import TimeLineEvent from '@/components/molecules/TimeLineEvent';
+import TimeLineEvent from '@/components/molecules/main/TimeLineEvent';
 
 interface TimeLineYearProps {
   year: string;

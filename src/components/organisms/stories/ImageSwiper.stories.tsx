@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import MainImageCarouselImage from '@/assets/img/MainImageCarousel.png';
-import ImageSwiper from '@/components/organisms/ImageSwiper';
+import ImageSwiper from '@/components/organisms/main/ImageSwiper';
 
 const meta: Meta<typeof ImageSwiper> = {
   title: 'Components/organisms/ImageSwiper',

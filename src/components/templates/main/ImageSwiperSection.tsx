@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import ImageSwiper from '@/components/organisms/ImageSwiper';
+import ImageSwiper from '@/components/organisms/main/ImageSwiper';
 import MainImageCarouselImage from '@/assets/img/MainImageCarousel.png';
 import {
   FirstMainImageCarouselContent,

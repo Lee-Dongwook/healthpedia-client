@@ -1,5 +1,5 @@
 import React from 'react';
-import TimeLineYear from '@/components/organisms/TimeLineYear';
+import TimeLineYear from '@/components/organisms/main/TimeLineYear';
 import { TimeLineData } from '@/lib/TimeLineData';
 
 const TimeLineSection: React.FC = () => {

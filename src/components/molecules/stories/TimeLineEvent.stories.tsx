@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import TimeLineEvent from '@/components/molecules/TimeLineEvent';
+import TimeLineEvent from '@/components/molecules/main/TimeLineEvent';
 
 const meta: Meta<typeof TimeLineEvent> = {
   title: 'Components/molecules/TimeLineEvent',

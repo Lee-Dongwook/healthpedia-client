@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import TimeLineYear from '@/components/organisms/TimeLineYear';
+import TimeLineYear from '@/components/organisms/main/TimeLineYear';
 
 const meta: Meta<typeof TimeLineYear> = {
   title: 'Components/organisms/TimeLineYear',
