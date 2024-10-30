@@ -30,7 +30,7 @@ const Header: React.FC = () => {
   }
 
   return (
-    <header className="sticky bg-white shadow-md w-[100vw] h-[100px] p-8">
+    <header className="sticky bg-white shadow-md w-[100vw] h-[90px] p-7">
       <div className="container mx-auto flex justify-around items-center px-4">
         <Image src={HeaderLogo} alt="Header Logo" width={180} height={100} />
         <nav className="space-x-8">

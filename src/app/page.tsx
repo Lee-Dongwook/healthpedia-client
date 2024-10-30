@@ -1,12 +1,12 @@
-// import Hero from '@/components/Hero';
+import Hero from '@/components/templates/Hero';
 // import Background from '@/components/Background';
 // import Section from '@/components/Section';
 
 export default function HomePage() {
   return (
     <div>
-      {/* <Hero />
-      <Background />
+      <Hero />
+      {/* <Background />
       <Section /> */}
     </div>
   );
