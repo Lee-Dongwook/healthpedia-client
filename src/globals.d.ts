@@ -9,3 +9,5 @@ declare module '*.svg?url' {
   const content: any;
   export default content;
 }
+
+declare module 'gsap/dist/scrollTrigger';
