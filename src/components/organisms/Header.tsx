@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
   if (isMobileTablet) {
     return (
-      <header className="sticky bg-white shadow-md w-[100vw] h-10 p-2">
+      <header className="sticky top-0 z-10 bg-white shadow-md w-[100vw] h-10 p-2">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <HamburgerIcon />
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
   }
 
   return (
-    <header className="sticky bg-white shadow-md w-[100vw] h-[90px] p-7">
+    <header className="sticky top-0 z-10 bg-white shadow-md w-[100vw] h-[90px] p-7">
       <div className="container mx-auto flex justify-around items-center px-4">
         <Image src={HeaderLogo} alt="Header Logo" width={180} height={100} />
         <nav className="space-x-8">
