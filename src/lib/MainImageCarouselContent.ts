@@ -2,7 +2,7 @@ import type { Content, ContentLine } from '@/types/MainImageCarouselContent';
 
 export const FirstMainImageCarouselContent: ContentLine = {
   firstLine: [
-    { text: '헬스피디아는', color: 'text-gray-500' },
+    { text: '헬스피디아는 ', color: 'text-gray-500' },
     { text: '고객에게 가치가 있는가', color: 'text-blue-500' },
     { text: '를 기준으로 의사결정 하겠습니다.', color: 'text-gray-500' },
   ],
@@ -22,7 +22,7 @@ export const FirstMainImageCarouselContent: ContentLine = {
 
 export const SecondMainImageCarouselContent: ContentLine = {
   firstLine: [
-    { text: '헬스피디아는', color: 'text-gray-500' },
+    { text: '헬스피디아는 ', color: 'text-gray-500' },
     {
       text: '고객의 성공을 위해 필요하다고 판단되면',
       color: 'text-blue-500',
@@ -44,7 +44,7 @@ export const SecondMainImageCarouselContent: ContentLine = {
 
 export const ThirdMainImageCarouselContent: ContentLine = {
   firstLine: [
-    { text: '헬스피디아는', color: 'text-gray-500' },
+    { text: '헬스피디아는 ', color: 'text-gray-500' },
     {
       text: '각 사업의 구성원들과 Win-Win하는',
       color: 'text-blue-500',
