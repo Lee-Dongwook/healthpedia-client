@@ -7,9 +7,9 @@ import AppDownloadButton from '@/components/molecules/AppDownloadButton';
 import { useResponsive } from '@/hooks/useResponsive';
 
 const Hero: React.FC = () => {
-  const { isMobile } = useResponsive();
+  const { isMobileTablet } = useResponsive();
 
-  if (isMobile) {
+  if (isMobileTablet) {
     return (
       <section className="bg-white text-center mt-10 p-20">
         <h1 className="text-4xl font-bold mb-2">병원 가기 전</h1>

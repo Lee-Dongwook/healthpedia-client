@@ -9,9 +9,9 @@ import HeaderItem from '@/components/molecules/HeaderItem';
 import { useResponsive } from '@/hooks/useResponsive';
 
 const Header: React.FC = () => {
-  const { isMobile } = useResponsive();
+  const { isMobileTablet } = useResponsive();
 
-  if (isMobile) {
+  if (isMobileTablet) {
     return (
       <header className="sticky bg-white shadow-md w-[100vw] h-10 p-2">
         <div className="container mx-auto flex justify-between items-center">
