@@ -6,9 +6,9 @@ interface LinkProps {
   children: React.ReactNode;
 }
 
-const Linker: React.FC<LinkProps> = ({ href, children }) => {
+const Linker: React.FC<LinkProps> = ({ href = '/', children }) => {
   return (
-    <Link href={href} className="text-gray-700 hover:text-gray-900">
+    <Link href={href} className="font-medium text-[#494949]">
       {children}
     </Link>
   );

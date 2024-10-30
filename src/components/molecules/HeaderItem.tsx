@@ -8,9 +8,9 @@ interface HeaderItemProps {
 
 const HeaderItem: React.FC<HeaderItemProps> = ({ href, title }) => {
   return (
-    <li>
+    <>
       <Linker href={href}>{title}</Linker>
-    </li>
+    </>
   );
 };
 

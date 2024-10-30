@@ -13,4 +13,9 @@ const meta: Meta<typeof HeaderItem> = {
 export default meta;
 type Story = StoryObj<typeof HeaderItem>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    href: '/',
+    title: 'HomePage',
+  },
+};

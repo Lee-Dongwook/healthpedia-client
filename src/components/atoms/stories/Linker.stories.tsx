@@ -13,4 +13,9 @@ const meta: Meta<typeof Linker> = {
 export default meta;
 type Story = StoryObj<typeof Linker>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    href: '/',
+    children: 'HomePage',
+  },
+};
