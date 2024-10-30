@@ -1,2 +1,2 @@
-export * from './useParallaxTransform';
-export * from './useWindowSize';
+export * from './useResponsive';
+export * from './useWindowWidth';
