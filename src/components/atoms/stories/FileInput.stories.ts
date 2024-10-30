@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import FileInput from './FileInput';
+import FileInput from '@/components/atoms/FileInput';
 
 const meta: Meta<typeof FileInput> = {
   title: 'Components/atoms/FileInput',

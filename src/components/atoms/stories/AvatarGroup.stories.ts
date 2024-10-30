@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import AvatarGroup from './AvatarGroup';
+import AvatarGroup from '@/components/atoms/AvatarGroup';
 import AuthorAvatarImage from '@/assets/img/author-avatar.png';
 
 const meta: Meta<typeof AvatarGroup> = {
