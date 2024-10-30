@@ -8,10 +8,12 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(ScrollTrigger);
 
 const sectionGroup = [
+  '/img/MainSection.png',
   '/img/MainSection2.png',
   '/img/MainSection3.png',
   '/img/MainSection4.png',
   '/img/MainSection5.png',
+  '/img/MainSection6.png',
 ];
 
 const GsapAnimation = () => {
