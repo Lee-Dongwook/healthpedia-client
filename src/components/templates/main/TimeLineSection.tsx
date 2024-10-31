@@ -4,9 +4,9 @@ import { TimeLineData } from '@/lib/TimeLineData';
 
 const TimeLineSection: React.FC = () => {
   return (
-    <div className="h-screen">
+    <div className="h-[1920px] flex flex-col justify-center items-center overflow-auto">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-bold mb-2"></h1>
+        <h1 className="text-4xl font-bold mb-2">주요 연혁</h1>
         <div className="flex flex-col gap-8">
           {TimeLineData.map(data => (
             <div key={data.year}>
