@@ -3,16 +3,16 @@ import PhoneFramerMotion from '@/components/organisms/main/PhoneFramerMotion';
 
 const Bottom: React.FC = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary flex flex-col justify-center items-center">
       <PhoneFramerMotion />
-      <div className="py-12 text-center">
-        <h1 className="text-white text-3xl font-bold">
+      <div className="text-center">
+        <h1 className="text-white text-5xl font-bold">
           기업 의료 복지도 아프지마와 함께
         </h1>
-        <p className="text-white mt-4">
-          임직원 의료비 걱정도 별도 비용 부담 없이 이제 아프지마와 함께하세요.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-10 mt-12 mb-40 text-white max-w-5xl mx-auto">
+        <p className="text-xl text-white mt-4">임직원 의료비 걱정도</p>
+        <p className="text-xl text-white">별도 비용 부담 없이</p>
+        <p className="text-xl text-white">이제 아프지마와 함께하세요.</p>
+        <div className="grid grid-cols-4 md:grid-rows-2 gap-10 mt-40 text-white max-w-5xl mx-auto">
           <div className="bg-white/10 p-4 rounded-md">
             <h2 className="font-extrabold">파트너십 대시보드</h2>
             <p className="mt-4 text-gray-300">
