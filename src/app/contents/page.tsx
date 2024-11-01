@@ -2,6 +2,7 @@ import Hero from '@/components/templates/contents/Hero';
 import Background from '@/components/templates/contents/Background';
 import Container from '@/components/templates/contents/Container';
 import FirstPhone from '@/components/templates/contents/FirstPhone';
+import SecondPhone from '@/components/templates/contents/SecondPhone';
 
 export default function ContentPage() {
   return (
@@ -10,6 +11,7 @@ export default function ContentPage() {
       <Background />
       <Container />
       <FirstPhone />
+      <SecondPhone />
     </div>
   );
 }
