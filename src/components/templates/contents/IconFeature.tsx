@@ -42,7 +42,7 @@ const IconFeature = () => {
   return (
     <section className="bg-white min-h-[600px] flex flex-col justify-center p-20">
       <TextContent {...TextContentData} />
-      <div className="ml-72 grid grid-cols-2 grid-rows-2 gap-6 p-10">
+      <div className="ml-64 grid grid-cols-2 grid-rows-2 gap-6 p-10">
         <IconFeatureDisplay {...IconFeatureDisplayDataList[0]} />
         <IconFeatureDisplay {...IconFeatureDisplayDataList[1]} />
         <IconFeatureDisplay {...IconFeatureDisplayDataList[2]} />

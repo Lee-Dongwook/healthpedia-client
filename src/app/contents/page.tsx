@@ -4,6 +4,8 @@ import Container from '@/components/templates/contents/Container';
 import FirstPhone from '@/components/templates/contents/FirstPhone';
 import SecondPhone from '@/components/templates/contents/SecondPhone';
 import IconFeature from '@/components/templates/contents/IconFeature';
+import BackgroundImage from '@/components/templates/contents/BackgroundImage';
+import Bottom from '@/components/templates/main/Bottom';
 
 export default function ContentPage() {
   return (
@@ -14,6 +16,8 @@ export default function ContentPage() {
       <FirstPhone />
       <SecondPhone />
       <IconFeature />
+      <BackgroundImage />
+      <Bottom />
     </div>
   );
 }
