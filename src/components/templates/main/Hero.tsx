@@ -4,6 +4,9 @@ import React from 'react';
 import Image from 'next/image';
 import HeroImage from '@/assets/img/Hero-logo.png';
 import AppDownloadButton from '@/components/molecules/AppDownloadButton';
+import HeroInfoSection from '@/components/organisms/main/HeroInfoSection';
+import AppDownloadSection from '@/components/organisms/main/AppDownloadSection';
+import HeroImageSection from '@/components/organisms/main/HeroImageSection';
 import { useResponsive } from '@/hooks/useResponsive';
 
 const Hero: React.FC = () => {
@@ -27,21 +30,9 @@ const Hero: React.FC = () => {
 
   return (
     <section className="bg-white text-center mt-3 p-20">
-      <h1 className="text-5xl font-bold mb-2">병원 가기 전</h1>
-      <h1 className="text-5xl font-bold mb-8">아프지마로 가격을 비교하세요</h1>
-      <p className="text-lg mb-4">
-        전국 가격 정보 제공부터, 야간/주말 진료 가능한 병원과 약국을 한눈에!
-      </p>
-      <p className="text-lg mb-10">
-        지금 가격 비교하고 아프지마로 합리적인 병원을 선택해보세요.
-      </p>
-      <div className="flex justify-center items-center space-x-16">
-        <AppDownloadButton store="google" />
-        <AppDownloadButton store="apple" />
-      </div>
-      <div className="flex justify-center items-center">
-        <Image src={HeroImage} alt="Hero Image" width={600} />
-      </div>
+      <HeroInfoSection />
+      <AppDownloadSection />
+      <HeroImageSection />
     </section>
   );
 };

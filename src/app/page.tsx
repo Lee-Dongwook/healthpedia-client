@@ -1,18 +1,18 @@
 import Hero from '@/components/templates/main/Hero';
-import Info from '@/components/templates/main/Info';
+import Background from '@/components/templates/main/Background';
 import GsapAnimation from '@/components/templates/main/GsapAnimation';
-import ImageSwiperSection from '@/components/templates/main/ImageSwiperSection';
-import TimeLineSection from '@/components/templates/main/TimeLineSection';
+import ImageSwiper from '@/components/templates/main/ImageSwiper';
+import TimeLine from '@/components/templates/main/TimeLine';
 import Bottom from '@/components/templates/main/Bottom';
 
 export default function HomePage() {
   return (
     <div>
       <Hero />
-      <Info />
+      <Background />
       <GsapAnimation />
-      <ImageSwiperSection />
-      <TimeLineSection />
+      <ImageSwiper />
+      <TimeLine />
       <Bottom />
     </div>
   );

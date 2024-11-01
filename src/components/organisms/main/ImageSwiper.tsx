@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import '../styles/ImageSwiper.css';
 
 interface TextLine {
   text: string;
@@ -35,8 +36,11 @@ const ImageSwiper: React.FC<ImageSwiperProps> = ({ data }) => {
   return (
     <>
       <Swiper
-        className="h-screen"
-        navigation
+        className="max-w-screen mx-auto h-screen p-40"
+        navigation={{
+          nextEl: '.swiper-button-next.custom',
+          prevEl: '.swiper-button-prev.custom',
+        }}
         autoplay={{
           delay: 5000,
         }}
@@ -81,6 +85,8 @@ const ImageSwiper: React.FC<ImageSwiperProps> = ({ data }) => {
             </SwiperSlide>
           )
         )}
+        <div className="swiper-button-next custom"></div>
+        <div className="swiper-button-prev custom"></div>
       </Swiper>
     </>
   );

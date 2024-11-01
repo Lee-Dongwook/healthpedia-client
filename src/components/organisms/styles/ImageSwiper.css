@@ -1,0 +1,14 @@
+.swiper-button-next.custom, .swiper-button-prev.custom {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+  
+  .swiper-button-next.custom {
+    right: 16%; 
+  }
+  
+  .swiper-button-prev.custom {
+    left: 15%; 
+  }
+  
