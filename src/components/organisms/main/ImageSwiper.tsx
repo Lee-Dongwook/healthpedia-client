@@ -35,6 +35,7 @@ const ImageSwiper: React.FC<ImageSwiperProps> = ({ data }) => {
   return (
     <>
       <Swiper
+        className="h-screen"
         navigation
         autoplay={{
           delay: 5000,

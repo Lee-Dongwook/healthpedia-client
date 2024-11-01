@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@/components/atoms/Button';
 import TimeLineYear from '@/components/organisms/main/TimeLineYear';
 import { TimeLineData } from '@/lib/TimeLineData';
 
@@ -14,6 +15,12 @@ const TimeLineSection: React.FC = () => {
             </div>
           ))}
         </div>
+        <h4 className="text-base font-bold mt-24 mb-4">
+          아프지마에 대해서 궁금한가요?
+        </h4>
+        <Button variant="primary" size="medium" className="text-center">
+          문의하기
+        </Button>
       </div>
     </div>
   );

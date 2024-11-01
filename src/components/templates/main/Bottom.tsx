@@ -3,7 +3,7 @@ import PhoneFramerMotion from '@/components/organisms/main/PhoneFramerMotion';
 
 const Bottom: React.FC = () => {
   return (
-    <div className="bg-primary flex flex-col justify-center items-center">
+    <div className="h-[1920px] bg-primary flex flex-col justify-center items-center">
       <PhoneFramerMotion />
       <div className="text-center">
         <h1 className="text-white text-5xl font-bold">

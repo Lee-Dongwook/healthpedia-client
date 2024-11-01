@@ -16,6 +16,10 @@ const PhoneFramerMotion: React.FC = () => {
             opacity: 0,
           }}
           animate={{ x: 20, opacity: 1 }}
+          exit={{
+            x: phone.direction === 'left' ? '-100vw' : '100vw',
+            opacity: 0,
+          }}
           transition={{ duration: 20, type: 'spring' }}
           className={`m-4 ${phone.id % 2 === 0 ? 'mt-48' : ''}`}
         >
