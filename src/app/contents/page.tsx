@@ -5,6 +5,7 @@ import FirstPhone from '@/components/templates/contents/FirstPhone';
 import SecondPhone from '@/components/templates/contents/SecondPhone';
 import IconFeature from '@/components/templates/contents/IconFeature';
 import BackgroundImage from '@/components/templates/contents/BackgroundImage';
+import ImagePair from '@/components/templates/contents/ImagePair';
 import Bottom from '@/components/templates/main/Bottom';
 
 export default function ContentPage() {
@@ -17,6 +18,7 @@ export default function ContentPage() {
       <SecondPhone />
       <IconFeature />
       <BackgroundImage />
+      <ImagePair />
       <Bottom />
     </div>
   );
