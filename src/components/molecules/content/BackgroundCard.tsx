@@ -3,7 +3,7 @@ import Image, { type StaticImageData } from 'next/image';
 
 interface BackgroundCardProps {
   imageUrl: string | StaticImageData;
-  overlayColor: string;
+  overlayColor?: string;
   title: string;
   description: string;
 }

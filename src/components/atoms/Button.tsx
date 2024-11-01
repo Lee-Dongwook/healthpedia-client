@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
     'g-large': 'w-[59px] h-[59px]',
     small: 'w-[86px] h-[45px] text-xs px-6 py-3',
     medium: 'w-[125px] h-[52px] text-sm px-8 py-3.5',
-    large: 'w-[145px] h-[59px] text-base px-12 py-4',
+    large: 'w-[200px] h-[59px] text-base px-12 py-4',
   };
 
   const variantClasses = {

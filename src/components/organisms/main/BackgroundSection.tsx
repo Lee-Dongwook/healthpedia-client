@@ -1,10 +1,6 @@
-'use client';
-
-import React from 'react';
-
-const Info: React.FC = () => {
+const BackgroundSection = () => {
   return (
-    <section className="bg-[#EBF3FF] min-h-[600px] flex flex-col justify-center items-center text-center mt-3 p-20">
+    <>
       <div className="flex justify-center items-center h-1 w-20 bg-blue-500 mb-6"></div>
       <h1 className="text-4xl font-bold mb-2">건강 관리 종합 플랫폼으로</h1>
       <h1 className="text-4xl font-bold mb-8">
@@ -16,8 +12,8 @@ const Info: React.FC = () => {
       <p className="text-base">
         외국인 환자 대상으로 의료관광 서비스를 제공하고 있습니다.
       </p>
-    </section>
+    </>
   );
 };
 
-export default Info;
+export default BackgroundSection;

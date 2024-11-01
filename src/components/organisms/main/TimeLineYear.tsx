@@ -13,7 +13,7 @@ const TimeLineYear: React.FC<TimeLineYearProps> = ({ year, events = [] }) => {
         <h2 className="text-8xl font-bold text-blue-100">{year}</h2>
         <div className="h-px flex-1 br-gray-300 ml-6"></div>
       </div>
-      <div className="ml-56 -mt-24">
+      <div className="ml-64 -mt-24">
         {events.map(({ date, description }, index) => (
           <TimeLineEvent key={index} date={date} description={description} />
         ))}

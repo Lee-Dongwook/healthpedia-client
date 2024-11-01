@@ -1,3 +1,3 @@
 export * from './main/GsapAnimation';
 export * from './main/Hero';
-export * from './main/Info';
+export * from './main/Background';
