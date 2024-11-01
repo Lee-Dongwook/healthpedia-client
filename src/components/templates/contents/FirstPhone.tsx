@@ -1,3 +1,5 @@
+import React from 'react';
+
 import PhoneFeatureDisplay from '@/components/organisms/contents/PhoneFeatureDisplaySection';
 import FirstToShowPhoneImage from '@/assets/img/Phone 2.png';
 import SecondToShowPhoneImage from '@/assets/img/Phone 1.png';
